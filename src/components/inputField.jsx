@@ -1,5 +1,4 @@
-import { useState } from "react";
-
+import React, { useState } from "react";
 export default function InputField({
   name,
   type = "text",
@@ -23,7 +22,7 @@ export default function InputField({
         placeholder={placeholder}
         onChange={handleChange}
       ></input>
-      <p>Input Value: {inputValue}</p>
+      {/* <p>Input Value: {inputValue}</p> */}
     </>
   );
 }
