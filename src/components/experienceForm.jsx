@@ -1,6 +1,6 @@
 import InputField from "./inputField";
 
-export function Form() {
+export function experienceForm() {
   return (
     <form>
       <InputField
