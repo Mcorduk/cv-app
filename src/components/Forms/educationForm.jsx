@@ -1,6 +1,6 @@
-import InputField from "./inputField";
+import InputField from "../inputField";
 
-export function educationForm() {
+export function EducationForm() {
   return (
     <form>
       <InputField

@@ -1,6 +1,6 @@
-import InputField from "./inputField";
+import InputField from "../inputField";
 
-export function generalForm() {
+export function GeneralForm() {
   return (
     <form>
       <InputField
