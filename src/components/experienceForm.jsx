@@ -9,12 +9,33 @@ export function Form() {
         placeholder="Enter Company Name "
       />
       <InputField
-        id="email"
-        type="email"
-        text="Email"
-        placeholder="Enter your Email"
+        name="positionTitle"
+        text="Position Title"
+        placeholder="Enter Position Title"
       />
-      <InputField id="phone" text="Email" placeholder="Enter your Email" />
+      <InputField
+        name="startDate"
+        text="Start Date"
+        type="date"
+        placeholder="Enter Start Date"
+      />
+      <InputField
+        name="endDate"
+        text="End Date"
+        type="date"
+        placeholder="Enter End Date"
+      />
+      <InputField
+        name="location"
+        text="Location"
+        placeholder="Enter Location"
+      />
+      <InputField
+        name="description"
+        text="Description"
+        type="textarea"
+        placeholder="Enter Decription.."
+      />
     </form>
   );
 }

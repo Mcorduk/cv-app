@@ -14,7 +14,13 @@ export function Form() {
         text="Email"
         placeholder="Enter your Email"
       />
-      <InputField name="phone" text="Email" placeholder="Enter your Email" />
+      <InputField
+        name="phone"
+        text="Phone Number"
+        type="tel"
+        placeholder="Enter Phone Number"
+      />
+      <InputField name="adress" text="Adress" placeholder="City, Country" />
     </form>
   );
 }

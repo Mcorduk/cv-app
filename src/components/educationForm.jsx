@@ -4,17 +4,32 @@ export function Form() {
   return (
     <form>
       <InputField
-        name="name"
-        text="Full Name"
-        placeholder="Enter your first and last name here"
+        name="school"
+        text="School"
+        placeholder="Enter school / university"
       />
       <InputField
-        name="email"
-        type="email"
-        text="Email"
-        placeholder="Enter your Email"
+        name="degree"
+        text="Degree"
+        placeholder="Enter Degree Title (Bsc., Msc. etc)"
       />
-      <InputField name="phone" text="Email" placeholder="Enter your Email" />
+      <InputField
+        name="eduStartDate"
+        type="date"
+        text="Start Date"
+        placeholder="Enter Start Date"
+      />
+      <InputField
+        name="eduEndDate"
+        type="date"
+        text="End Date"
+        placeholder="Enter End Date"
+      />
+      <InputField
+        name="location"
+        text="Location"
+        placeholder="Enter Location"
+      />
     </form>
   );
 }

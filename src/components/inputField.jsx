@@ -1,5 +1,5 @@
 export default function InputField({
-  id,
+  name,
   type = "text",
   text = "Input Name",
   placeholder = "Type Here...",
