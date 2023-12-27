@@ -21,8 +21,16 @@
   4. Date From - Until
 
   Maybe a little Aside for extra options
-  The CV on the side and takes input when you type
+
+## The CV on the side and takes input when you type
+
+- Header for the CV mainly
+- Header for each Section
+- Dates as aside and content on main, headers and text below
+- Figure out a way to write inputs directly to the CV, this is the main part!
 
 # Fix
+
+- How to make global css work on react. Earlier I solve this the better.
 
 # QOL
