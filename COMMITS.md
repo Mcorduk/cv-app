@@ -2,8 +2,6 @@
 
 This website follows [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
-Commit message will be checked using [husky and commit lint](https://theodorusclarence.com/library/husky-commitlint-prettier), you can't commit if not using the proper convention below.
-
 ### Format
 
 `<type>(optional scope): <description>`
