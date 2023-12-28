@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from "react";
 
 export const Collapse = (props) => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
   const toggleIsExpanded = useCallback(() => {
     setIsExpanded((isExpanded) => !isExpanded);
   }, []);
@@ -12,11 +12,11 @@ export const Collapse = (props) => {
         onClick={toggleIsExpanded}
         className="bg-gray-800 text-white rounded-lg px-4 py-2"
       >
-        Toggle Collapse
+        {props.text}
       </button>
       <div
-        className={`overflow-hidden transition-opacity ${
-          isExpanded ? "opacity-100" : "opacity-0"
+        className={`overflow-hidden transition-all duration-300 ease-in-out ${
+          isExpanded ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
         }`}
         style={{ maxHeight: isExpanded ? "500px" : "0px" }}
       >
