@@ -4,6 +4,7 @@ export default function InputField({
   type = "text",
   text = "Input Name",
   placeholder = "Type Here...",
+  className = "",
 }) {
   const [inputValue, setInputValue] = useState("");
 
@@ -12,7 +13,7 @@ export default function InputField({
   };
 
   return (
-    <>
+    <div className={className}>
       <label
         className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
         htmlFor={name}
@@ -29,6 +30,6 @@ export default function InputField({
         onChange={handleChange}
       ></input>
       {/* <p>Input Value: {inputValue}</p> */}
-    </>
+    </div>
   );
 }
