@@ -33,5 +33,6 @@
 
 - How to make global css work on react. Earlier I solve this the better.
 - Fixing ESLint issues in future projects
+- Min width to forms
 
 # QOL

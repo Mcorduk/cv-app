@@ -17,8 +17,8 @@ function SectionInfo({
   description = null,
 }) {
   return (
-    <article>
-      <aside>
+    <article className="flex gap-6 py-3">
+      <aside className=" flex flex-col min-w-fit w-1/3">
         <p>
           <span>{startDate}</span>
           <span> - </span>
@@ -26,7 +26,7 @@ function SectionInfo({
         </p>
         <p>{location}</p>
       </aside>
-      <main>
+      <main className="grow">
         <p>{institution}</p>
         <p>{title}</p>
         <p>{description}</p>
@@ -36,5 +36,19 @@ function SectionInfo({
 }
 
 export default function Section() {
-  return <SectionHeader text={"Education Section"} />;
+  return (
+    <>
+      <SectionHeader text={"Education Section"} />
+      <SectionInfo
+        startDate="04/2018"
+        endDate="02/2019"
+        location="Singapore, Singapore"
+        institution="Black Mesa Labs"
+        title="Research Asistant"
+        description={
+          "Supported senior researchers on accessibility standards for the open web. Created and usability tested wireframes and prototypes. Produced interactive documentation for quick onboarding of new researchers."
+        }
+      />
+    </>
+  );
 }
