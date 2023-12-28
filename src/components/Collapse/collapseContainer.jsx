@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from "react";
 
 export const Collapse = (props) => {
-  const [isExpanded, setIsExpanded] = useState(true);
+  const [isExpanded, setIsExpanded] = useState(false);
   const toggleIsExpanded = useCallback(() => {
     setIsExpanded((isExpanded) => !isExpanded);
   }, []);
