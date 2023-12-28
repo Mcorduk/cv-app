@@ -5,7 +5,7 @@ import Aside from "./components/aside";
 import CvDisplay from "./components/cvDisplay";
 function App() {
   return (
-    <div className="flex min-h-screen max-w-screen-2xl m-auto ">
+    <div className="flex overflow-auto min-h-screen max-w-screen-xl ">
       <Aside />
       <CvDisplay />
     </div>

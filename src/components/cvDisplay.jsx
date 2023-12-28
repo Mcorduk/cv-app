@@ -5,10 +5,12 @@ import ExpSection from "./Sections/experienceSection";
 
 export default function CvDisplay() {
   return (
-    <div className="flex-grow p-4 border-4 m-5 ">
-      <CvHeader />
-      <EduSection />
-      <ExpSection />
+    <div>
+      <div className=" w-1/2 p-4 border-4 m-5 h-screen fixed self-start">
+        <CvHeader />
+        <EduSection />
+        <ExpSection />
+      </div>
     </div>
   );
 }
