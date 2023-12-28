@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from "react";
 
-export const Collapse = () => {
+export const Collapse = (props) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const toggleIsExpanded = useCallback(() => {
     setIsExpanded((isExpanded) => !isExpanded);
@@ -10,7 +10,7 @@ export const Collapse = () => {
     <>
       <button
         onClick={toggleIsExpanded}
-        className="bg-blue-500 text-white px-4 py-2"
+        className="bg-gray-800 text-white rounded-lg px-4 py-2"
       >
         Toggle Collapse
       </button>
@@ -21,7 +21,8 @@ export const Collapse = () => {
         style={{ maxHeight: isExpanded ? "500px" : "0px" }}
       >
         <div className="fade-in-animation">
-          Hey I am some content, isn&apos;t that Crazy?
+          {/* Hey I am some content, isn&apos;t that Crazy? */}
+          {props.children}
         </div>
       </div>
     </>
