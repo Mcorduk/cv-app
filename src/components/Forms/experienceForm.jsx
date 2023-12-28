@@ -1,5 +1,24 @@
 import React from "react";
+import { SectionHeader, SectionInfo } from "../Sections/educationSection";
 import InputField from "./inputField";
+
+export default function ExpSection() {
+  return (
+    <>
+      <SectionHeader text={"Experience Section"} />
+      <SectionInfo
+        startDate="08/2020"
+        location="Istanbul, Turkey"
+        institution="Aperture Science Laboratories"
+        title="Research Asistant"
+        description={
+          "Supported senior researchers on accessibility standards for the open web. Created and usability tested wireframes and prototypes. Produced interactive documentation for quick onboarding of new researchers."
+        }
+      />
+    </>
+  );
+}
+
 export function ExperienceForm() {
   return (
     <div className="w-full max-w-lg p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-6 md:pt-4 dark:bg-gray-800 dark:border-gray-700">

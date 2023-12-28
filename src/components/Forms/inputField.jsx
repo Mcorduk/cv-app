@@ -1,17 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 export default function InputField({
   name,
   type = "text",
   text = "Input Name",
   placeholder = "Type Here...",
   className = "",
+  value,
+  onChange,
 }) {
-  const [inputValue, setInputValue] = useState("");
-
   const handleChange = (e) => {
-    setInputValue(e.target.value);
+    onChange(e.target.value);
   };
-
   return (
     <div className={className}>
       <label
@@ -25,7 +24,7 @@ export default function InputField({
         type={type}
         id={name}
         name={name}
-        value={inputValue}
+        value={value}
         placeholder={placeholder}
         onChange={handleChange}
       ></input>
