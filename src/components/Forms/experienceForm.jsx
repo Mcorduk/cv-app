@@ -1,5 +1,5 @@
 import React from "react";
-import InputField from "../inputField";
+import InputField from "./inputField";
 export function ExperienceForm() {
   return (
     <div className="w-full max-w-lg p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-6 md:pt-4 dark:bg-gray-800 dark:border-gray-700">

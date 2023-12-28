@@ -1,5 +1,5 @@
 import React from "react";
-import InputField from "../inputField";
+import InputField from "./inputField";
 
 export function GeneralForm() {
   return (
