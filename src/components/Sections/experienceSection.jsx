@@ -35,15 +35,14 @@ function SectionInfo({
   );
 }
 
-export default function Section() {
+export default function ExpSection() {
   return (
     <>
-      <SectionHeader text={"Education Section"} />
+      <SectionHeader text={"Experience Section"} />
       <SectionInfo
-        startDate="04/2018"
-        endDate="02/2019"
-        location="Singapore, Singapore"
-        institution="Black Mesa Labs"
+        startDate="08/2020"
+        location="Istanbul, Turkey"
+        institution="Aperture Science Laboratories"
         title="Research Asistant"
         description={
           "Supported senior researchers on accessibility standards for the open web. Created and usability tested wireframes and prototypes. Produced interactive documentation for quick onboarding of new researchers."

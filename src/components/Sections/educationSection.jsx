@@ -35,7 +35,7 @@ function SectionInfo({
   );
 }
 
-export default function Section() {
+export default function EduSection() {
   return (
     <>
       <SectionHeader text={"Education Section"} />
