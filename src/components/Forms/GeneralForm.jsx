@@ -20,6 +20,8 @@ export function GeneralForm({ generalInfo, updateGeneral }) {
             type="email"
             text="Email"
             placeholder="Enter Email"
+            value={generalInfo.email}
+            onChange={(e) => updateGeneral("email", e.target.value)}
             className="flex-grow"
           />
         </div>
@@ -29,12 +31,16 @@ export function GeneralForm({ generalInfo, updateGeneral }) {
             text="Phone Number"
             type="tel"
             placeholder="Enter Phone Number"
+            value={generalInfo.number}
+            onChange={(e) => updateGeneral("number", e.target.value)}
             className="flex-grow pr-4"
           />
           <InputField
             name="address"
             text="Address"
             placeholder="Enter City, Country"
+            value={generalInfo.address}
+            onChange={(e) => updateGeneral("address", e.target.value)}
             className="flex-grow"
           />
         </div>
