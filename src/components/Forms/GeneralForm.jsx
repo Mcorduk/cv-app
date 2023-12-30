@@ -30,8 +30,8 @@ export function GeneralForm() {
             className="flex-grow pr-4"
           />
           <InputField
-            name="adress"
-            text="Adress"
+            name="address"
+            text="Address"
             placeholder="Enter City, Country"
             className="flex-grow"
           />

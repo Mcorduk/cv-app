@@ -10,7 +10,7 @@ export function ExperienceForm({ children }) {
           {children}
           <InputField
             id="companyName"
-            text="Full Name"
+            text="Company Name"
             placeholder="Enter Company Name "
             className="flex-grow pr-4"
           />
@@ -39,7 +39,7 @@ export function ExperienceForm({ children }) {
         </div>
         <InputField
           name="location"
-          text="Location"
+          text="Company Location"
           placeholder="Enter Location"
         />
         <InputField
