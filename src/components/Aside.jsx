@@ -1,8 +1,8 @@
 import React from "react";
-import { Collapse } from "./Collapse/collapseContainer";
-import { EducationForm } from "./Forms/educationForm";
-import { ExperienceForm } from "./Forms/experienceForm";
-import { GeneralForm } from "./Forms/generalForm";
+import { Collapse } from "./Collapse/CollapseContainer";
+import { EducationForm } from "./Forms/EducationForm";
+import { ExperienceForm } from "./Forms/ExperienceForm";
+import { GeneralForm } from "./Forms/GeneralForm";
 
 export default function Aside() {
   return (

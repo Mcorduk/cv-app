@@ -1,7 +1,7 @@
 import React from "react";
 import CvHeader from "./Headers/cvHeader";
-import EduSection from "./Sections/educationSection";
-import ExpSection from "./Sections/experienceSection";
+import EduSection from "./Sections/EducationSection";
+import ExpSection from "./Sections/ExperienceSection";
 
 export default function CvDisplay() {
   return (
