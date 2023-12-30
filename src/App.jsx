@@ -18,11 +18,11 @@ function App() {
   const [eduLocation, setEduLocation] = useState("");
 
   // Experience Section States
-  const [school, setSchool] = useState("");
-  const [degree, setDegree] = useState("");
-  const [eduStartDate, setEduStartDate] = useState("");
-  const [eduEndDate, setEduEndDate] = useState("");
-  const [eduLocation, setEduLocation] = useState("");
+  const [company, setCompany] = useState("");
+  const [expTitle, setExpTitle] = useState("");
+  const [expStartDate, setExpStartDate] = useState("");
+  const [eduExpDate, setExpEndDate] = useState("");
+  const [expLocation, setExpLocation] = useState("");
 
   return (
     <div className="flex overflow-auto min-h-screen max-w-screen-xl ">
