@@ -1,5 +1,5 @@
 import React from "react";
-import CvHeader from "./Headers/cvHeader";
+import CvHeader from "./Headers/CvHeader";
 import EduSection from "./Sections/EducationSection";
 import ExpSection from "./Sections/ExperienceSection";
 

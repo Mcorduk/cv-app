@@ -8,9 +8,6 @@ export default function InputField({
   value,
   onChange,
 }) {
-  const handleChange = (e) => {
-    onChange(e.target.value);
-  };
   return (
     <div className={className}>
       <label
@@ -26,7 +23,7 @@ export default function InputField({
         name={name}
         value={value}
         placeholder={placeholder}
-        onChange={handleChange}
+        onChange=""
       ></input>
       {/* <p>Input Value: {inputValue}</p> */}
     </div>

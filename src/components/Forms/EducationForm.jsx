@@ -1,24 +1,5 @@
 import React from "react";
-import { SectionHeader, SectionInfo } from "../Sections/EducationSection";
 import InputField from "./InputField";
-
-export default function EduSection() {
-  return (
-    <>
-      <SectionHeader text={"Education Section"} />
-      <SectionInfo
-        startDate="04/2018"
-        endDate="02/2019"
-        location="Singapore, Singapore"
-        institution="Black Mesa Labs"
-        title="Research Asistant"
-        description={
-          "Supported senior researchers on accessibility standards for the open web. Created and usability tested wireframes and prototypes. Produced interactive documentation for quick onboarding of new researchers."
-        }
-      />
-    </>
-  );
-}
 
 export function EducationForm() {
   return (

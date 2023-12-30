@@ -4,7 +4,7 @@ import { SectionHeader, SectionInfo } from "./EducationSection";
 export default function ExpSection() {
   return (
     <>
-      <SectionHeader text={"Experience Section"} />
+      <SectionHeader text="Experience Section" />
       <SectionInfo
         startDate="08/2020"
         location="Istanbul, Turkey"
