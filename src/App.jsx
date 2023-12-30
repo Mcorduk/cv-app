@@ -4,30 +4,67 @@ import Aside from "./components/Aside";
 import CvDisplay from "./components/CvDisplay";
 
 function App() {
-  // General Section States
-  const [fullName, setFullName] = useState("");
-  const [email, setEmail] = useState("");
-  const [number, setNumber] = useState("");
-  const [address, setAdress] = useState("");
+  const [generalInfo, setGeneralInfo] = useState({
+    fullName: "",
+    email: "",
+    number: "",
+    address: "",
+  });
 
-  // Education Section States
-  const [school, setSchool] = useState("");
-  const [degree, setDegree] = useState("");
-  const [eduStartDate, setEduStartDate] = useState("");
-  const [eduEndDate, setEduEndDate] = useState("");
-  const [eduLocation, setEduLocation] = useState("");
+  // Update function for education
+  const updateGeneral = (field, value) => {
+    setGeneralInfo((prevGeneral) => ({
+      ...prevGeneral,
+      [field]: value,
+    }));
+  };
 
-  // Experience Section States
-  const [company, setCompany] = useState("");
-  const [expTitle, setExpTitle] = useState("");
-  const [expStartDate, setExpStartDate] = useState("");
-  const [eduExpDate, setExpEndDate] = useState("");
-  const [expLocation, setExpLocation] = useState("");
+  const [education, setEducation] = useState({
+    school: "",
+    degree: "",
+    startDate: "",
+    endDate: "",
+    location: "",
+  });
+
+  // Update function for education
+  const updateEducation = (field, value) => {
+    setEducation((prevEducation) => ({
+      ...prevEducation,
+      [field]: value,
+    }));
+  };
+
+  const [experience, setExperience] = useState({
+    company: "",
+    title: "",
+    startDate: "",
+    endDate: "",
+    location: "",
+  });
+  // Update function for experience
+  const updateExperience = (field, value) => {
+    setExperience((prevExperience) => ({
+      ...prevExperience,
+      [field]: value,
+    }));
+  };
 
   return (
     <div className="flex overflow-auto min-h-screen max-w-screen-xl ">
-      <Aside />
-      <CvDisplay />
+      <Aside
+        generalInfo={generalInfo}
+        updateGeneral={updateGeneral}
+        education={education}
+        updateEducation={updateEducation}
+        experience={experience}
+        updateExperince={updateExperience}
+      />
+      <CvDisplay
+        generalInfo={generalInfo}
+        education={education}
+        experience={experience}
+      />
     </div>
   );
 }
