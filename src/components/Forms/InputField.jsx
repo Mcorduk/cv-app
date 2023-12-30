@@ -23,7 +23,7 @@ export default function InputField({
         name={name}
         value={value}
         placeholder={placeholder}
-        onChange=""
+        onChange={onChange}
       ></input>
       {/* <p>Input Value: {inputValue}</p> */}
     </div>
