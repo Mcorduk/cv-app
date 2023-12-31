@@ -41,6 +41,7 @@ function App() {
     startDate: "",
     endDate: "",
     location: "",
+    description: "",
   });
   // Update function for experience
   const updateExperience = (field, value) => {

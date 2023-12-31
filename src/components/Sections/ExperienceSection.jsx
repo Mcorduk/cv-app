@@ -1,5 +1,5 @@
 import React from "react";
-import { SectionHeader, SectionInfo } from "./ExperienceSection";
+import { SectionHeader, SectionInfo } from "./EducationSection";
 
 export default function ExpSection({ experience }) {
   return (
