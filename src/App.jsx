@@ -5,10 +5,10 @@ import CvDisplay from "./components/CvDisplay";
 
 function App() {
   const [generalInfo, setGeneralInfo] = useState({
-    fullName: "",
-    email: "",
-    number: "",
-    address: "",
+    fullName: "NIKOLA TESLA",
+    email: "nikolatesla@gmail.com",
+    number: "+90 553 33 33",
+    address: "La Volaria, Noche Varia St. Brazil",
   });
 
   // Update function for education
@@ -20,11 +20,11 @@ function App() {
   };
 
   const [education, setEducation] = useState({
-    school: "",
-    degree: "",
-    startDate: "",
-    endDate: "",
-    location: "",
+    school: "University of Hong Kong",
+    degree: "Msc.",
+    startDate: "1998-11-10",
+    endDate: "2002-11-10",
+    location: "Hong Kong",
   });
 
   // Update function for education
@@ -36,12 +36,13 @@ function App() {
   };
 
   const [experience, setExperience] = useState({
-    company: "",
-    title: "",
-    startDate: "",
-    endDate: "",
-    location: "",
-    description: "",
+    company: "Tesla Inc.",
+    title: "Founder",
+    startDate: "2007-11-10",
+    endDate: "Present",
+    location: "Texas, USA",
+    description:
+      "I am the founder of Tesla. I operated day to day activities as well as supervising workers. I am quite a big deal",
   });
   // Update function for experience
   const updateExperience = (field, value) => {
