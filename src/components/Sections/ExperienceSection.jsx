@@ -9,8 +9,8 @@ export default function ExpSection({ experience }) {
         startDate={experience.startDate}
         endDate={experience.endDate}
         location={experience.location}
-        institution={experience.school}
-        title={experience.degree}
+        institution={experience.company}
+        title={experience.title}
         description={experience.description}
       />
     </>
