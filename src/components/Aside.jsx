@@ -1,5 +1,4 @@
 import React from "react";
-import { Collapse } from "./Collapse/CollapseContainer";
 import { EducationForm } from "./Forms/EducationForm";
 import { ExperienceForm } from "./Forms/ExperienceForm";
 import { GeneralForm } from "./Forms/GeneralForm";
@@ -18,18 +17,18 @@ export default function Aside({
       <GeneralForm generalInfo={generalInfo} updateGeneral={updateGeneral} />
       {/* First education form to be filled. */}
       <EducationForm education={education} updateEducation={updateEducation} />
-      <Collapse text="Add Education">
+      {/* <Collapse text="Add Education">
         {" "}
         <EducationForm />
-      </Collapse>
+      </Collapse> */}
       {/* First Experience form to be filled. */}
       <ExperienceForm
         experience={experience}
         updateExperience={updateExperience}
       />
-      <Collapse text="Add Experience">
+      {/* <Collapse text="Add Experience">
         <ExperienceForm />
-      </Collapse>
+      </Collapse> */}
     </div>
   );
 }
