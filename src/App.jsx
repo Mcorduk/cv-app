@@ -4,6 +4,7 @@ import Aside from "./components/Aside";
 import CvDisplay from "./components/CvDisplay";
 
 function App() {
+  // General Information State
   const [generalInfo, setGeneralInfo] = useState({
     fullName: "NIKOLA TESLA",
     email: "nikolatesla@gmail.com",
@@ -19,6 +20,7 @@ function App() {
     }));
   };
 
+  // Education State
   const [education, setEducation] = useState({
     school: "University of Hong Kong",
     degree: "Msc.",
@@ -35,6 +37,7 @@ function App() {
     }));
   };
 
+  // Experience State
   const [experience, setExperience] = useState({
     company: "Tesla Inc.",
     title: "Founder",
@@ -44,6 +47,7 @@ function App() {
     description:
       "I am the founder of Tesla. I operated day to day activities as well as supervising workers. I am quite a big deal",
   });
+
   // Update function for experience
   const updateExperience = (field, value) => {
     setExperience((prevExperience) => ({

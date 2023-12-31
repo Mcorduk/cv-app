@@ -25,7 +25,6 @@ export default function InputField({
         placeholder={placeholder}
         onChange={onChange}
       ></input>
-      {/* <p>Input Value: {inputValue}</p> */}
     </div>
   );
 }
