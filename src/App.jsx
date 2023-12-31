@@ -59,7 +59,7 @@ function App() {
         education={education}
         updateEducation={updateEducation}
         experience={experience}
-        updateExperince={updateExperience}
+        updateExperience={updateExperience}
       />
       <CvDisplay
         generalInfo={generalInfo}
