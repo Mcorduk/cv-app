@@ -4,7 +4,7 @@ import { SectionHeader, SectionInfo } from "./Section";
 export default function ExpSection({ experience }) {
   return (
     <>
-      <SectionHeader text="Experience Section" />
+      <SectionHeader text="Experience Sectoni <3" />
       <SectionInfo
         // Passing individual pieces of experiences state object as props
         startDate={experience.startDate}
